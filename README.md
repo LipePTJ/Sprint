@@ -1,2 +1,2 @@
-# Sprint
-atividade frontend javascript
+# Sprint - Consumo de API
+Atividade Fronend - JavaScript
