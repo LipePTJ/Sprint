@@ -1,14 +1,28 @@
 <!DOCTYPE html>
-<html lang="pt-br">
+<html lang="pt-BR">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>SprintDex</title>
-    <link rel="stylesheet" href="css/style.css">
+  <meta charset="UTF-8">
+  <title>Pokédex Simples</title>
+  <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
-    
 
-    <script src="js/script.js"></script>
+  <div class="card">
+
+    <h1>Pokédex</h1>
+    <input type="text" id="pokemonInput" placeholder="Nome ou número">
+    <button id="searchBtn">Buscar</button>
+
+    <div id="pokemonContainer" class="hidden">
+
+      <img id="pokemonSprite" src="" alt="Pokémon">
+      <h2 id="pokemonName"></h2>
+      <p id="pokemonType"></p>
+
+    </div>
+
+    <p id="errorMsg" class="error"></p>
+  </div>
+  <script src="js/script.js"></script>
 </body>
 </html>
