@@ -9,7 +9,7 @@ document.getElementById('searchBtn').addEventListener('click', async () => {
   if (!input) return;
 
   try {
-    // CORREÇÃO 1: Utilizando a variável 'input' e corrigindo a URL
+
     const response = await fetch(`https://pokeapi.co/api/v2/pokemon/${input}`);
     if (!response.ok) throw new Error('Pokémon não encontrado!');
 
@@ -18,7 +18,6 @@ document.getElementById('searchBtn').addEventListener('click', async () => {
     document.getElementById('pokemonSprite').src = data.sprites.front_default;
     document.getElementById('pokemonName').textContent = data.name.toUpperCase();
     
-    // CORREÇÃO 2: Adicionando as crases (backticks) ao redor de toda a string
     document.getElementById('pokemonType').textContent = `Tipo: ${data.types.map(t => t.type.name).join(', ')}`;
 
     container.classList.remove('hidden');
