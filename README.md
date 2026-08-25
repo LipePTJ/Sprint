@@ -11,7 +11,15 @@ O projeto consiste em uma aplicação web de busca de Pokémon, utilizando JavaS
 * HTML5
 * CSS3
 * JavaScript
-* API de Pokémon
+
+## API utilizada
+
+Neste projeto foi utilizada a **PokéAPI**, uma API REST gratuita que fornece dados sobre Pokémon.
+
+A API é utilizada para realizar as buscas e obter as informações dos Pokémon exibidas na aplicação.
+
+**Documentação:** https://pokeapi.co/docs/v2#pokemon-section
+
 
 ## Estrutura do projeto
 
