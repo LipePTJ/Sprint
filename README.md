@@ -16,9 +16,12 @@ O projeto consiste em uma aplicação web de busca de Pokémon, utilizando JavaS
 ## Estrutura do projeto
 
 ```text
-SPRINTDEX/
-├── CSS/
+POKEDEX/
+├── css/
 │   └── style.css
+├── images/
+│   └── icon/
+│       └── Pokebola.png
 ├── js/
 │   └── script.js
 └── index.html
