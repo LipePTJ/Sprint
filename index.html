@@ -2,27 +2,52 @@
 <html lang="pt-BR">
 <head>
   <meta charset="UTF-8">
-  <title>Pokédex Simples</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Pokédex API Sprint</title>
   <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
 
-  <div class="card">
+  <main class="container">
+    <header>
+      <h1>Pokédex</h1>
+      <p>Busque seu Pokémon favorito</p>
+    </header>
 
-    <h1>Pokédex</h1>
-    <input type="text" id="pokemonInput" placeholder="Nome ou número">
-    <button id="searchBtn">Buscar</button>
 
-    <div id="pokemonContainer" class="hidden">
+    <section class="search-area">
+      <input type="text" id="pokemonInput" placeholder="Ex: charizard ou 6" autocomplete="off">
+      <button id="searchBtn">Buscar</button>
+    </section>
 
-      <img id="pokemonSprite" src="" alt="Pokémon">
-      <h2 id="pokemonName"></h2>
-      <p id="pokemonType"></p>
+  
+    <div id="errorMsg" class="error-message hidden"></div>
 
-    </div>
 
-    <p id="errorMsg" class="error"></p>
-  </div>
+    <section id="pokemonCard" class="card hidden">
+      <div class="card-header">
+        <span id="pokemonId" class="poke-id"></span>
+        <h2 id="pokemonName" class="poke-name"></h2>
+      </div>
+      
+      <div class="image-container">
+        
+        <img id="pokemonImage" src="" alt="Imagem do Pokémon">
+      </div>
+
+     
+      <div id="pokemonTypes" class="types-container"></div>
+      
+     
+      <div class="poke-info">
+        <p><strong>Peso:</strong> <span id="pokemonWeight"></span> kg</p>
+        <p><strong>Altura:</strong> <span id="pokemonHeight"></span> m</p>
+      </div>
+    </section>
+
+  </main>
+
+  
   <script src="js/script.js"></script>
 </body>
 </html>
